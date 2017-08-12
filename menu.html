@@ -1,0 +1,22 @@
+<html>
+<head>
+<link href="ALMenu.css" rel="stylesheet" />
+<script src="contextMenu.js"type="text/javascript"></script
+</head>
+<body class="body">
+A Context Menu that works on any browser
+<div id="TestMenu">
+
+</div>
+<script>
+	//contextMenu.RegisterMenuElement("MyMenu", "body");
+	var mymenu = new ALMenu.ALContextMenu("TestMenu");
+	contextMenu.RegisterALMenu(mymenu.menu, "body");
+	mymenu.addMenuItem("Download", function(){alert('hey');});
+	mymenu.addMenuItem("Share", function(){alert('hey');});
+	mymenu.addMenuItem("Buy", function(){alert('hey');});
+	mymenu.addMenuItem("Register", function(){alert('hey');});
+	
+</script>
+</body>
+</html>
